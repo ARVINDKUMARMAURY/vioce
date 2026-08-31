@@ -1,0 +1,26 @@
+# ============================================
+# Telegram Audio-to-Hindi-Text Bot - Env Variables
+# ============================================
+# Is file ka naam ".env" rakhein aur values apni daalein.
+# NOTE: Railway par ye file upload NAHI karni — wahan "Variables" tab
+# mein hi ye same cheezein manually add karni hain.
+
+# ---- ZAROORI (compulsory) ----
+
+# BotFather se mila hua token (@BotFather -> /newbot)
+BOT_TOKEN=1234567890:AAExampleTokenYahanDaalein
+
+# Whisper model size: tiny / base / small / medium
+# "small" default rakhein, "medium" zyada accurate par slow hai
+WHISPER_MODEL=small
+
+# ---- OPTIONAL (sirf 20MB se badi files ke liye) ----
+
+# Agar local telegram-bot-api server run kar rahe hain (badi files ke liye),
+# uska internal URL yahan daalein. Nahi to is line ko hata dein ya blank rakhein.
+TELEGRAM_API_URL=
+
+# ---- Ye sirf tab chahiye agar aap khud local bot-api-server chala rahe hain ----
+# (https://my.telegram.org se milte hain)
+TELEGRAM_API_ID=
+TELEGRAM_API_HASH=
